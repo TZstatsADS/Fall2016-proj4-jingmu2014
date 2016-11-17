@@ -19,7 +19,7 @@ Names of the 15 features are listed below:
 + segments_confidence, segments_loudness_max, segments_loudness_max_time, segments_loudness_start, segments_timbre
 + tatums_confidence, tatums_start
 
-Any features with a '_confidence' suffix represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
+Any features with a '\_confidence' suffix represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
 
 After examing some samples, the 1st song can be a good representative for browsing the features:
 ![image](https://github.com/TZstatsADS/Fall2016-proj4-jingmu2014/blob/master/figs/barsbeatssections.png)
@@ -34,7 +34,7 @@ From the graphs we can see that beats and segments have the highest confidence v
 
 
 ##3. Response Manipulation
-
+Since we are predicting the existence of the words in a particular song, not its frequency, it is acceptable to transfer the lyrics dataset to binary responses (0 = The word is not in this song and 1 = The word is in this song). Hence I discard the information of numeber of appearance of a word in a particular song.
 
 ##4. Model Fitting
 
