@@ -12,6 +12,16 @@ For each song, there are 15 features availble. 13 of them are vectors of various
 Y seems a little bit easier. We can treat every word as a response and using supervised methods to fit 5000 models. However, the computation training time could be long.
 
 ##2. Feature Extraction
+Names of the 15 features are listed below:
++ bars_confidence, bars_start
++ beats_confidence, beats_start
++ sections_confidence, sections_start
++ segments_confidence, segments_loudness_max, segments_loudness_max_time, segments_loudness_start, segments_timbre
++ tatums_confidence, tatums_start
+
+Any features with a _confidence suffix represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
+
+
 
 
 ##3. Response Manipulation
