@@ -19,7 +19,14 @@ Names of the 15 features are listed below:
 + segments_confidence, segments_loudness_max, segments_loudness_max_time, segments_loudness_start, segments_timbre
 + tatums_confidence, tatums_start
 
-Any features with a _confidence suffix represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
+Any features with a '_confidence' suffix represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
+
+After examing some samples, the 1st song can be a good representative for browsing the features:
+![image](https://github.com/TZstatsADS/Fall2016-proj4-jingmu2014/blob/master/figs/barsbeatssections.png)
+![image](https://github.com/TZstatsADS/Fall2016-proj4-jingmu2014/blob/master/figs/segmentstatums.png)
+
+From the graphs we can see
+
 
 
 
