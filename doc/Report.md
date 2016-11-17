@@ -21,7 +21,7 @@ Names of the 15 features are listed below:
 
 According to [lpt](http://www.nature.com/articles/srep00521), loudness, pitches and timbre are the three primary musical facets in contemporary western popular music. Therefore it is necessary to include them in the extracted features.
 
-The rest raw features are all linked with 'confidence' which represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
+The rest raw features are all related with 'confidence' which represents the confidence level (between 0 and 1) when transmitting the music into numerical data. There are five of these type: bars, beats, sections, segments and tatums.
 
 After examing some samples, the 1st song can be a good representative for browsing the features:
 ![image](https://github.com/TZstatsADS/Fall2016-proj4-jingmu2014/blob/master/figs/barsbeatssections.png)
@@ -33,11 +33,14 @@ In order to convert these features to a single vector for each song, I computed 
 
 13 of the features are of vectors while 2 others are of matrix with 12 rows. Therefore, the result vector will be of length ((13+2\*12)\*5 = 185) for each song. Since there are 2350 songs in the training set, the resulting feature matrix will be of dimension 2350 \* 185.
 
+This part takes about 5 minutes with 2350 training data.
+
 ##3. Response Manipulation
 Since we are predicting the existence of the words in a particular song, not its frequency, it is acceptable to transfer the lyrics dataset to binary responses (0 = The word is not in this song and 1 = The word is in this song). Hence I discard the information of numeber of appearance of a word in a particular song. The response matrix of lyrics is now of dimension 2350 \* 5001 (the first column is song ID) with 0 and 1 entries.
 
 ##4. Model Fitting
-The problem now becomes 
+The project now becomes a classification problem which we need to fit 5000 models, one for each word.
+Since
 
 ##5. Prediction
 
