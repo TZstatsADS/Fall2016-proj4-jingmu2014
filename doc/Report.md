@@ -25,7 +25,9 @@ After examing some samples, the 1st song can be a good representative for browsi
 ![image](https://github.com/TZstatsADS/Fall2016-proj4-jingmu2014/blob/master/figs/barsbeatssections.png)
 ![image](https://github.com/TZstatsADS/Fall2016-proj4-jingmu2014/blob/master/figs/segmentstatums.png)
 
-From the graphs we can see
+From the graphs we can see that beats and segments have the highest confidence values, sections and tatums have middle level confidence values, while bars have least confidence values. However, in order to make better prediction, I choose to keep all of them.
+
+
 
 
 
