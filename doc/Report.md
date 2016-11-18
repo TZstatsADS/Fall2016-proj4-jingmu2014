@@ -40,7 +40,10 @@ Since we are predicting the existence of the words in a particular song, not its
 
 ##4. Model Fitting
 The project now becomes a classification problem which we need to fit 5000 models, one for each word.
-Since
+I used Extreme Gradient Boosting (xgboost) in this project, the reasons are as below:
+1. Xgboost produces the probability which means we are able to rank them for the final result.
+2. Xgboost tends not to overfittng.
+3. Xgboost is computational fast.
 
 ##5. Prediction
 
