@@ -43,9 +43,12 @@ The project now becomes a classification problem which we need to fit 5000 model
 I used Extreme Gradient Boosting (xgboost) in this project, the reasons are as below:
 1. Xgboost produces the probability which means we are able to rank them for the final result.  
 2. Xgboost tends not to overfittng.  
-3. Xgboost is computational fast.  
+3. Xgboost can handle NA data in the features.
+4. Xgboost is computational fast.  
 
 ##5. Prediction
-
+Since the number columns are not required for the submission, after I computed the probablities, I set these columns to be the least number in the matrix minus 1. This computation will ensure these columns ranked as 4987.
 
 ##6. Summary
+One problem in this project is that the response is sparse. There are a lot 0's in the matrix. Most common classifiers do not perform well in this situation.  
+To conquer the problem, cascading classifer could be applied here. We could also use a larger sample if possible.
