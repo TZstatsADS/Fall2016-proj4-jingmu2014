@@ -39,11 +39,11 @@ This part takes about 5 minutes with 2350 training data.
 Since we are predicting the existence of the words in a particular song, not its frequency, it is acceptable to transfer the lyrics dataset to binary responses (0 = The word is not in this song and 1 = The word is in this song). Hence I discard the information of numeber of appearance of a word in a particular song. The response matrix of lyrics is now of dimension 2350 \* 5001 (the first column is song ID) with 0 and 1 entries.
 
 ##4. Model Fitting
-The project now becomes a classification problem which we need to fit 5000 models, one for each word.
-I used Extreme Gradient Boosting (xgboost) in this project, the reasons are as below:
+The project now becomes a classification problem which we need to fit 5000 models, one for each word. The training time takes about 3hours.  
+I used Extreme Gradient Boosting (xgboost) in this project, the reasons are as below:  
 1. Xgboost produces the probability which means we are able to rank them for the final result.  
 2. Xgboost tends not to overfittng.  
-3. Xgboost can handle NA data in the features.
+3. Xgboost can handle NA data in the features.  
 4. Xgboost is computational fast.  
 
 ##5. Prediction
